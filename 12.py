@@ -1,0 +1,10 @@
+class Solution:
+    def intToRoman(self, num: int) -> str:
+        M=["","M","MM","MMM"]
+        C=["","C","CC","CCC","CD","D","DC","DCC","DCCC","CM"]
+        X=["","X","XX","XXX","XL","L","LX","LXX","LXXX","XC"]
+        I=["","I","II","III","IV","V","VI","VII","VIII","IX"]
+        return M[num//1000]+C[num%1000//100]+X[num%1000%100//10]+I[num%1000%100%10]
+
+#This part only contains the solution. The codes may not work directly.
+#Therefore, you need to copy the code to the required leetcode question solution section to verify it. After selecting Python3, copy it to the answer section.
